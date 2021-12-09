@@ -1,0 +1,28 @@
+{
+  "name": "health-care",
+  "version": "1.0.0",
+  "description": "Landing Page Covid-19 Info",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist",
+    "start-dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint ./src"
+  },
+  "author": "yellyputri (yellyputriw@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.0.0",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
