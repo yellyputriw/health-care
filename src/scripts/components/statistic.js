@@ -21,7 +21,7 @@ class Statistic extends HTMLElement {
           <div class="counter-value"></div>
           <div class="counter-label text-recovered">Sembuh</div>
         </div>
-        <div class="counter-box">
+        <div class="counter-box dth">
           <div class="counter-value"></div>
           <div class="counter-label text-deaths">Meninggal</div>
         </div>
