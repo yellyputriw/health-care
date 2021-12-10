@@ -5,7 +5,7 @@
   "description": "Landing Page Covid-19 Info",
   "main": "index.js",
   "scripts": {
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start-dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
