@@ -1,46 +1,46 @@
 function select() {
   // get list country
-  const renderAllcountry = (countries) => {
+  const renderAllCountry = (countries) => {
     const listCountryElement = document.querySelector('.select-box');
     listCountryElement.innerHTML = `
-      <option value=''>Silahkan Pilih Negara</option>
-    `;
+        <option value="">Silahkan pilih negara</option>
+      `;
 
     countries.forEach((country) => {
       listCountryElement.innerHTML += `
-          <option value=${country.iso3}">${country.name}</option>
+          <option value="${country.iso3}">${country.name}</option>
         `;
     });
   };
 
-  const showResponMessage = (message = 'Check your internet connection') => {
-    //eslint-disable-next-line no-alert
+  const showResponseMessage = (message = 'Check your internet connection') => {
+    // eslint-disable-next-line no-alert
     alert(message);
   };
 
   const countryList = () => {
     const xhr = new XMLHttpRequest();
 
-    //eslint-disable-next-line func-names
+    // eslint-disable-next-line func-names
     xhr.onload = function () {
       const responseJson = JSON.parse(this.responseText);
       if (responseJson.error) {
-        showResponMessage(responseJson.message);
+        showResponseMessage(responseJson.message);
       } else {
-        renderAllcountry(responseJson.countries);
+        renderAllCountry(responseJson.countries);
       }
     };
 
-    //eslint-disable-next-line func-names
+    // eslint-disable-next-line func-names
     xhr.onerror = function () {
-      showResponMessage();
+      showResponseMessage();
     };
 
     xhr.open('GET', 'https://covid19.mathdro.id/api/countries');
     xhr.send();
   };
 
-  //call list country
+  // call list country
   countryList();
 }
 

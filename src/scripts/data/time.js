@@ -24,8 +24,8 @@ const renderLastUpdates = (lastUpdate) => {
   };
 
   lastUpdatesElement.innerHTML = `
-      <span>Terakhir Diperbarui: ${lastUpdateIndo(lastUpdate)}</span>
-    `;
+    <span>Terakhir Diperbarui: ${lastUpdateIndo(lastUpdate)}</span>
+  `;
 };
 
 const showResponseMessage = (message = 'Check your internet connection') => {
