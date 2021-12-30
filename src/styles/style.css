@@ -323,3 +323,249 @@ footer-bar p a {
   font-weight: 600;
   text-decoration: none;
 }
+
+/* Responsive */
+@media (max-width: 1200px) {
+  app-bar,
+  hero-section,
+  about-section,
+  symptom-section,
+  prevent-section {
+    max-width: 1000px;
+  }
+
+  .hero-image img {
+    width: 540px;
+  }
+
+  .about-image img {
+    width: 350px;
+  }
+
+  .prevent-container {
+    gap: 1.5rem;
+  }
+
+  .prevent-container p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  app-bar,
+  hero-section,
+  about-section,
+  symptom-section,
+  prevent-section {
+    max-width: 880px;
+  }
+
+  .hero-image img {
+    width: 450px;
+  }
+
+  .about-image img {
+    width: 300px;
+  }
+
+  .about-title h2,
+  .symptom-title h2,
+  .prevent-title h2 {
+    font-size: 2rem;
+  }
+
+  .symptom-title ul li {
+    font-size: 1rem;
+  }
+
+  .symptom-image img {
+    width: 200px;
+  }
+  .prevent-container {
+    gap: 1rem;
+  }
+
+  .prevent-container .card img {
+    width: 100px;
+  }
+
+  .prevent-container .card p {
+    text-align: center;
+  }
+
+  .prevent-container .card {
+    padding: 18px 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  app-bar,
+  hero-section,
+  about-section,
+  symptom-section,
+  prevent-section {
+    max-width: 700px;
+  }
+
+  hero-section {
+    padding: 5rem 0 6.25rem;
+  }
+
+  .hero-image img {
+    width: 345px;
+  }
+
+  .hero-title-desc p {
+    font-size: 1rem;
+  }
+
+  .hero-title::before {
+    display: none;
+  }
+
+  .hero-image::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0 0 6rem;
+  }
+
+  .hero-title {
+    width: 375px;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 250px;
+  }
+
+  .about-title::after {
+    display: none;
+  }
+
+  .symptom-image img {
+    width: 150px;
+  }
+
+  .content {
+    padding: 16px 130px;
+  }
+}
+
+@media (max-width: 650px) {
+  body::before {
+    left: 55vw;
+  }
+
+  app-bar,
+  hero-section,
+  about-section,
+  symptom-section,
+  prevent-section {
+    max-width: 500px;
+  }
+
+  about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  symptom-section {
+    grid-template-columns: 1fr;
+  }
+
+  .symptom-image {
+    display: none;
+  }
+
+  .prevent-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  body::before {
+    display: none;
+  }
+
+  app-bar,
+  hero-section,
+  about-section,
+  symptom-section,
+  prevent-section {
+    max-width: 400px;
+  }
+
+  .hero-title-heading h2 {
+    font-size: 7vw;
+  }
+
+  .content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 426px) {
+  app-bar {
+    justify-content: center;
+  }
+
+  .about-title h2,
+  .symptom-title h2,
+  .prevent-title h2 {
+    font-size: 1.5rem;
+  }
+  .prevent-container {
+    grid-template-columns: 1fr;
+  }
+
+  .prevent-container .card {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 375px) {
+  app-bar,
+  hero-section,
+  about-section,
+  symptom-section,
+  prevent-section {
+    max-width: 350px;
+  }
+
+  .hero-image::before {
+    display: none;
+  }
+
+  .hero-image img {
+    width: 300px;
+  }
+
+  .hero-title {
+    width: 300px;
+  }
+
+  .hero-title-heading {
+    padding: 12px 0;
+  }
+
+  .about-image img {
+    width: 200px;
+  }
+
+  .about-title p {
+    padding: 0 12px;
+  }
+
+  .prevent-title h2 {
+    text-align: center;
+  }
+}
