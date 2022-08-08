@@ -11,8 +11,8 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint ./src"
   },
-  "author": "yellyputri (yellyputriw@gmail.com)",
-  "license": "ISC",
+  "author": "yellyputri <yellyputriw@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
